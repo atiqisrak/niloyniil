@@ -15,6 +15,11 @@ body{
     background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
 }
+
+section{
+    padding: 6rem;
+}
+
 a{
     text-decoration: none;
     color: #eeeeee;
@@ -39,7 +44,8 @@ img{
 
 .section-heading{
     text-align: center;
-    margin-top: 10rem;
+/*    margin-top: 5rem;*/
+    margin-bottom: 10rem;
 }
 .section-heading h1{
     font-size: 3.5rem;
@@ -74,6 +80,9 @@ img{
 .section-heading h6{
     font-size: 1.6rem;
     font-weight: 300;
+}
+.has-margin-right{
+    margin-right: 5rem;
 }
 /*End reusable*/
 
@@ -205,11 +214,10 @@ li{
 }
 .profile-img{
     flex: 5;
-    margin-right: 5rem;
-    padding-left: 5rem;
 }
 .about-details{
     flex: 1;
+    margin-left: 10rem;
 }
 .social-media{
     margin-top: 5rem;
@@ -267,18 +275,183 @@ li{
 /*End services*/
 
 /*Start portfolio*/
-/*End services*/
+.portfolio-item{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.portfolio-item:last-child{
+    margin-bottom: 0;
+}
+.profile-img{
+    flex: 1;
+    width: 50rem;
+}
+.portfolio-description{
+    /* flex: 1;
+    margin-left: 5rem;
+    margin-right: 5rem;*/
+}
+.portfolio-description h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+.portfolio-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.3;
+}
+.portfolio-description .cta{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #00cc00;
+    transition: color 650ms;
+}
+.portfolio-description .cta:hover{
+    color: #ebffeb;
+}
+/*End portfolio*/
 
 /*Start timeline*/
+.timeline ul{
+    border-left: 4px solid #00cc00;
+    border-radius: .8rem;
+    background-color: rgba(0,0,0,0.05);
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+}
+.timeline h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: .3;
+}
+.timeline .date{
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.timeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+.timeline .date::before,
+.timeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.timeline .date::before{
+    content: attr(data-date);
+    left: -21rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.7rem;
+}
+.timeline .date::after{
+    content: '';
+    box-shadow: 0 0 0 4px #ebffeb;
+    border-radius: 100%;
+    left: -7.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+/*    background-color: lightslategray;*/
+}
 /*End timeline*/
 
 /*Start contact*/
+.container{
+    background-color: #221e3f;
+}
+form{
+    width: 70%;
+    margin: 0 auto;
+}
+form label{
+    font-size: 1.5rem;
+}
+input,
+select,
+textarea{
+    width:100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: #00cc00;
+}
+input[type="submit"]{
+    width: initial;
+    margin-left: 45%;
+    background-color: #00cc00;
+    color: #ebffeb;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+    color: #221e3f;
+    font-weight: bold;
+    background-color: #ebffeb;
+}
 /*End contact*/
 
 /*Start footer*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #221e3f;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #ebffeb;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+ }
+ .up i{
+     color: #221e3f;
+     font-size: 2rem;
+     margin: auto;
+ }
+ .copyright p{
+     font-size: 1.4rem;
+ }
 /*End footer*/
 
 /*Start animations*/
+@keyframes pulse {
+    0%{
+        box-shadow: #221e3f);
+    }
+    70%{
+        box-shadow: #221e3f);
+    }
+    100%{
+        box-shadow: #221e3f);
+    }
+}
 /*End animations*/
 
 /*Start media queries*/
