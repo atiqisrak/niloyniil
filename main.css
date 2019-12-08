@@ -115,7 +115,6 @@ li{
 }
 .nav-link{
     font-family: 'Alternity', serif;
-    src: url("https://https://github.com/niloyniil/niloyniil.github.io/tree/master/alternity/Alternity.otf");
     font-size:2rem;
     padding: 1rem;
 }
@@ -457,3 +456,37 @@ input[type="submit"]:hover{
 
 /*Start media queries*/
 /*End media queries*/
+
+
+@font-face {
+    font-family: 'Alternity';
+    src: url('fonts/Alternity.eot');
+    src: local('☺'), url('fonts/Alternity.woff') format('woff'), url('fonts/Alternity.ttf') format('truetype'), url('fonts/Alternity.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alternity Italic';
+    src: url('fonts/Alternity Italic.eot');
+    src: local('☺'), url('fonts/Alternity Italic.woff') format('woff'), url('fonts/Alternity Italic.ttf') format('truetype'), url('fonts/Alternity Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alternity Bold';
+    src: url('fonts/Alternity Bold.eot');
+    src: local('☺'), url('fonts/Alternity Bold.woff') format('woff'), url('fonts/Alternity Bold.ttf') format('truetype'), url('fonts/Alternity Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Alternity Bold Italic';
+    src: url('fonts/Alternity Bold Italic.eot');
+    src: local('☺'), url('fonts/Alternity Bold Italic.woff') format('woff'), url('fonts/Alternity Bold Italic.ttf') format('truetype'), url('fonts/Alternity Bold Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
